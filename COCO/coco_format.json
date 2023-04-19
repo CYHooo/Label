@@ -4,7 +4,7 @@
         "version": "1.0",
         "description": "COCO Dataset Format",
         "contributor": "Yeongho Choi",
-        "url": "https://labelingtool.com",
+        "url": "https://example.labelingtool.com",
         "date_created": "2023/04/19"
     },
     "licenses": [
@@ -16,14 +16,19 @@
     ],
     "categories": [
         {
+            "id": 0,
+            "name": "example",
+            "supercategory": "None"
+        },
+        {
             "id": 1,
             "name": "person",
-            "supercategory": "person"
+            "supercategory": "example"
         },
         {
             "id": 2,
             "name": "car",
-            "supercategory": "vehicle"
+            "supercategory": "example"
         }
     ],
     "images": [
@@ -32,7 +37,7 @@
             "file_name": "image1.jpg",
             "height": 480,
             "width": 640,
-            "coco_url": "https://labelingtool.com/images/1",
+            "coco_url": "https://example.labelingtool.com/images/1",
             "date_captured": "2021/04/01"
         },
         {
@@ -40,7 +45,7 @@
             "file_name": "image2.jpg",
             "height": 720,
             "width": 1280,
-            "coco_url": "https://labelingtool.com/images/2",
+            "coco_url": "https://example.labelingtool.com/images/2",
             "date_captured": "2021/04/02"
         }
     ],
