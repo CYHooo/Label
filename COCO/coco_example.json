@@ -1,6 +1,6 @@
 {
     "info": {
-        "year": 2023, // file created year
+        "year": 2023, // _file created year
         "version": "1.0", // version
         "description": "COCO Dataset Format",
         "contributor": "Yeongho Choi", // editer
