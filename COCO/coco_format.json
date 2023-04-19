@@ -1,0 +1,100 @@
+{
+    "info": {
+        "year": 2023,
+        "version": "1.0",
+        "description": "COCO Dataset Format",
+        "contributor": "Yeongho Choi",
+        "url": "https://labelingtool.com",
+        "date_created": "2023/04/19"
+    },
+    "licenses": [
+        {
+            "id": 1,
+            "name": "CC BY 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "person",
+            "supercategory": "person"
+        },
+        {
+            "id": 2,
+            "name": "car",
+            "supercategory": "vehicle"
+        }
+    ],
+    "images": [
+        {
+            "id": 1,
+            "file_name": "image1.jpg",
+            "height": 480,
+            "width": 640,
+            "coco_url": "https://labelingtool.com/images/1",
+            "date_captured": "2021/04/01"
+        },
+        {
+            "id": 2,
+            "file_name": "image2.jpg",
+            "height": 720,
+            "width": 1280,
+            "coco_url": "https://labelingtool.com/images/2",
+            "date_captured": "2021/04/02"
+        }
+    ],
+    "annotations": [
+        {
+            "id": 1,
+            "image_id": 1,
+            "category_id": 1,
+            "segmentation": [
+                [
+                    141,
+                    50,
+                    240,
+                    50,
+                    240,
+                    246,
+                    141,
+                    246
+                ]
+            ],
+            "area": 32910,
+            "bbox": [
+                141,
+                50,
+                99,
+                196
+            ],
+            "iscrowd": 0
+        },
+        {
+            "id": 2,
+            "image_id": 2,
+            "category_id": 2,
+            "segmentation": [
+                [
+                    301,
+                    71,
+                    380,
+                    71,
+                    380,
+                    171,
+                    301,
+                    171
+                ]
+            ],
+            "area": 6561,
+            "bbox": [
+                301,
+                71,
+                79,
+                100
+            ],
+            "iscrowd": 0
+        }
+    ]
+    
+}
