@@ -1,0 +1,2 @@
+- image: train/val/test images (*.jpg)
+- label: one images one label file (*.txt)
