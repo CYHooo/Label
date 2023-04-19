@@ -1,1 +1,1 @@
-#This folder should upload train/val/test images (*.jpg)
+# This folder should upload train/val/test images (*.jpg)
