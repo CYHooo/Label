@@ -1,1 +1,65 @@
-
+{
+    "info": {
+        "year": file created year,
+        "version": "version",
+        "description": "COCO Dataset Format",
+        "contributor": "editer",
+        "url": "dataset's website",
+        "date_created": "date of create file"
+    },
+    "licenses": [
+        {
+            "id": licenses id,
+            "name": "licenses name",
+            "url": "liceses infomation website"
+        }
+    ],
+    "categories": [
+        {
+            "id": categories class id,
+            "name": "class name",
+            "supercategory": "father class name"
+        }
+    ],
+    "images": [
+        {
+            "id": image id,
+            "file_name": "image1.jpg",
+            "height": image height pixel,
+            "width": image width pixel,
+            "coco_url": "image link from website",
+            "date_captured": "create date"
+        }
+    ],
+    "annotations": [
+        {
+            "id": annotation id,
+            "image_id": image id from above "images",
+            "category_id": category id from above "categories",
+            "segmentation": [
+                [
+                    x1,
+                    y1,
+                    x2,
+                    y2,
+                    x3,
+                    y3,
+                    x4,
+                    y4
+                ]
+            ],
+            "area": area from [x1,y1,x2,y2...],
+            "bbox": [
+                bbox_x1,
+                bbox_y1,
+                bbox_width,
+                bbox_height
+            ],
+            "iscrowd": 0 // "0" for instance segmentation, "1" for semantic segmentation
+                         // i.e:
+                         // instance segmentation: one unit one label number, one unit can have mulit-label
+                         // semantic segmentation: can mulit-unit in one label, one unit just have one label
+        }
+    ]
+    
+}
