@@ -3,4 +3,4 @@ val: path/to/valid/images
 test: path/to/test/images
 
 nc: 4
-names: ['car','building','person','book']
+names: ['car','building','person','book'] # class-index: 0,1,2,3
