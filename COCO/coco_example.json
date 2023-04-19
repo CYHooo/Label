@@ -1,24 +1,24 @@
 {
     "info": {
-        "year": 2023,
-        "version": "1.0",
+        "year": 2023, // file created year
+        "version": "1.0", // version
         "description": "COCO Dataset Format",
-        "contributor": "Yeongho Choi",
-        "url": "https://example.labelingtool.com",
-        "date_created": "2023/04/19"
+        "contributor": "Yeongho Choi", // editer
+        "url": "https://example.labelingtool.com", // labeling website
+        "date_created": "2023/04/19" // date of create file
     },
     "licenses": [
         {
-            "id": 1,
-            "name": "CC BY 4.0",
-            "url": "https://creativecommons.org/licenses/by/4.0/"
+            "id": 1, // licenses id
+            "name": "CC BY 4.0", // licenses name
+            "url": "https://creativecommons.org/licenses/by/4.0/" // licenses link
         }
     ],
     "categories": [
         {
-            "id": 0,
-            "name": "example",
-            "supercategory": "None"
+            "id": 0, // class id
+            "name": "example", // class name
+            "supercategory": "None" // father class name
         },
         {
             "id": 1,
@@ -33,12 +33,12 @@
     ],
     "images": [
         {
-            "id": 1,
-            "file_name": "image1.jpg",
-            "height": 480,
-            "width": 640,
-            "coco_url": "https://example.labelingtool.com/images/1",
-            "date_captured": "2021/04/01"
+            "id": 1, // images id
+            "file_name": "image1.jpg", // images name
+            "height": 480, // image height pixel
+            "width": 640, // image width pixel
+            "coco_url": "https://example.labelingtool.com/images/1", // image website link
+            "date_captured": "2021/04/01" // image captured date
         },
         {
             "id": 2,
@@ -51,29 +51,32 @@
     ],
     "annotations": [
         {
-            "id": 1,
-            "image_id": 1,
-            "category_id": 1,
+            "id": 1, // annotations number
+            "image_id": 1, // image id from above "images"
+            "category_id": 1, // class id from above "categories"
             "segmentation": [
                 [
-                    141,
-                    50,
-                    240,
-                    50,
-                    240,
-                    246,
-                    141,
-                    246
+                    141, // x1
+                    50,  // y1
+                    240, // x2
+                    50,  // y2
+                    240, // x3
+                    246, // y3
+                    141, // x4
+                    246  // y4
                 ]
             ],
-            "area": 32910,
+            "area": 32910, // area from [x1,y1,x2,y2...]
             "bbox": [
-                141,
-                50,
-                99,
-                196
+                141, // bbox_x
+                50,  // bbox_y
+                99,  // bbox_width
+                196  // bbox_height
             ],
-            "iscrowd": 0
+            "iscrowd": 0     // "0" for instance segmentation, "1" for semantic segmentation
+                             // i.e:
+                             // instance segmentation: one unit one label number, one unit can have mulit-label
+                             // semantic segmentation: can mulit-unit in one label, one unit just have one label
         },
         {
             "id": 2,
