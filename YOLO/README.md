@@ -15,3 +15,8 @@
     - center_y: Bounding Box center y coordinate range in [0,1]
     - width: Bounding Box width range in [0,1]
     - height: Bounding Box height range in [0,1]
+    ### example
+
+    <img src="https://github.com/CYHooo/label/example/label_example.png" alt="example" sytle="height:400px width: 200px;">
+    
+    
