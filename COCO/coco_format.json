@@ -14,11 +14,12 @@
             "url": "liceses infomation website"
         }
     ],
+    // "info", "licenses" don't need to modify
     "categories": [
         {
             "id": categories class id,
             "name": "class name",
-            "supercategory": "father class name"
+            "supercategory": "father class name" 
         }
     ],
     "images": [
